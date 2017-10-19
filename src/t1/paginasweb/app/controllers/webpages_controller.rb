@@ -18,9 +18,19 @@ class WebpagesController < ApplicationController
   end
 
   def update
+    respond_to do |format|
+      if @webpage.update(webpage_params)
+        format.html { redirect_to @webpage, notice: 'A página foi atualizada com sucesso.' }
+        format.json { render :show, status: :ok, location: @webpage }
+      else
+        format.html { render :edit }
+        format.json { render json: @webpage.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   def edit
+    @webpage = Webpage.find(params[:id])
   end
 
   def destroy

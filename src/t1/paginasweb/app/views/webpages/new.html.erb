@@ -1,6 +1,7 @@
 <h1>Nova página</h1>
 
 <%= form_with scope: :webpage, url: webpages_path, local: true do |form| %>
+
   <p>
     <%= form.label :title %><br>
     <%= form.text_field :title %>
@@ -25,3 +26,5 @@
     <%= form.submit %>
   </p>
 <% end %>
+
+<%= link_to 'Voltar', webpages_path %>
