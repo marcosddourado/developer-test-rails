@@ -23,6 +23,12 @@ class WebpagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should show webpage" do
+    get webpage_url(@webpage)
+    assert_response :success
+  end
+
+
   # test "should get update" do
   #   get webpages_update_url
   #   assert_response :success
