@@ -33,17 +33,11 @@ class WebpagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should destroy webpage" do
+    assert_difference('Webpage.count', -1) do
+      delete webpage_url(@webpage)
+    end
 
-  # test "should get update" do
-  #   get webpages_update_url
-  #   assert_response :success
-  # end
-
-
-  # test "should get destroy" do
-  #   get webpages_destroy_url
-  #   assert_response :success
-  # end
-
-
+    assert_redirected_to webpages_url
+  end
 end
