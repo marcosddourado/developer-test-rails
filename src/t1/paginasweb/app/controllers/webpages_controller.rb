@@ -52,4 +52,5 @@ class WebpagesController < ApplicationController
     def webpage_params
       params.require(:webpage).permit(:title, :description, :body, :author, :created_at, :updated_at)
     end
+    
 end

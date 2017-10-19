@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171018165010) do
+ActiveRecord::Schema.define(version: 20171019160409) do
+
+  create_table "pages", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.string "body"
+    t.string "author"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "webpages", force: :cascade do |t|
     t.string "title"
