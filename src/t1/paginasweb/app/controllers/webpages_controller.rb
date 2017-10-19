@@ -22,5 +22,11 @@ class WebpagesController < ApplicationController
   end
 
   def show
+    @webpage = Webpage.find(params[:id])
   end
+
+  private
+    def webpage_params
+      params.require(:webpage).permit(:title, :description, :body, :author, :created_at, :updated_at)
+    end
 end

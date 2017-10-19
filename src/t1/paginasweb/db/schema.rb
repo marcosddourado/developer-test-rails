@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 20171018165010) do
 
   create_table "webpages", force: :cascade do |t|
-    t.string "tittle"
+    t.string "title"
     t.string "description"
     t.string "body"
     t.string "author"
