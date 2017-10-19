@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :webpages
   get 'webpages/new'
 
   get 'webpages/create'
@@ -12,8 +13,6 @@ Rails.application.routes.draw do
   get 'webpages/index'
 
   get 'webpages/show'
-
-  resources :webpages
 
 	root 'webpages#index'
 end

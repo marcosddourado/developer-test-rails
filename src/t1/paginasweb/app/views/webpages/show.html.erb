@@ -1,14 +1,14 @@
 <h1>Páginas</h1>
 
 <p>
-  <strong>Título:</strong>
+  <strong>Title:</strong>
   <%= @webpage.title %>
 </p>
- 
+
 <p>
-  <strong>Descrição:</strong>
+  <strong>Description:</strong>
   <%= @webpage.description %>
-</p> 
+</p>
 
 <p>
   <strong>Body:</strong>
@@ -16,6 +16,8 @@
 </p>
 
 <p>
-  <strong>Autor:</strong>
+  <strong>Author:</strong>
   <%= @webpage.author %>
 </p>
+
+<%= link_to 'Back', webpages_path %>
