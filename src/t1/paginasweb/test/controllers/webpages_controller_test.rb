@@ -18,6 +18,11 @@ class WebpagesControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to webpage_url(Webpage.last)
   end
 
+  test "should get index" do
+    get webpages_url
+    assert_response :success
+  end
+
   # test "should get update" do
   #   get webpages_update_url
   #   assert_response :success
