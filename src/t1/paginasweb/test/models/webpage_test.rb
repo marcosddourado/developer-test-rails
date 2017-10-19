@@ -1,7 +1,9 @@
 require 'test_helper'
 
 class WebpageTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+
+	test "should not save webpage without title" do
+	  webpage = Webpage.new
+	  assert_not webpage.save, "Saved the webpage without a title"
+	end
 end

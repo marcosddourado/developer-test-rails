@@ -2,14 +2,14 @@
 
 one:
   id: 
-  tittle: MyString
+  title: MyString
   description: MyString
   body: MyString
   author: MyString
 
 two:
   id: 
-  tittle: MyString
+  title: MyString
   description: MyString
   body: MyString
   author: MyString
