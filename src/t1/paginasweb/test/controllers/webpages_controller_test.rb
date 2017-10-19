@@ -2,7 +2,7 @@ require 'test_helper'
 
 class WebpagesControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @webpage = pages(:one)
+    @webpage = webpages(:one)
   end
 
   test "should get new" do

@@ -15,3 +15,11 @@ two:
   author: MyString
   created_at: 2017-10-19 14:04:09
   updated_at: 2017-10-19 14:04:09
+
+error:
+  title: MySt
+  description: MyString
+  body: MyString
+  author: MyString
+  created_at: 2017-10-19 14:04:09
+  updated_at: 2017-10-19 14:04:09
