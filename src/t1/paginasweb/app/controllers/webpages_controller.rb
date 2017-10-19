@@ -27,6 +27,7 @@ class WebpagesController < ApplicationController
   end
 
   def index
+    @webpages = Webpage.all
   end
 
   def show

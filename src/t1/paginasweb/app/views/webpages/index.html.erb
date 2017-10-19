@@ -1,1 +1,37 @@
-<h1>Hello, Rails!</h1>
+<p id="notice"><%= notice %></p>
+
+<h1>Webpages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Body</th>
+      <th>Author</th>
+      <th>Created at</th>
+      <th>Updated at</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @webpages.each do |webpage| %>
+      <tr>
+        <td><%= webpage.title %></td>
+        <td><%= webpage.description %></td>
+        <td><%= webpage.body %></td>
+        <td><%= webpage.author %></td>
+        <td><%= webpage.created_at %></td>
+        <td><%= webpage.updated_at %></td>
+        <td><%= link_to 'Show', webpage %></td>
+        <td><%= link_to 'Edit', edit_webpage_path(webpage) %></td>
+        <td><%= link_to 'Destroy', webpage, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New webPage', new_webpage_path %>
