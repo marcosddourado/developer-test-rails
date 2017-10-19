@@ -34,6 +34,10 @@ class WebpagesController < ApplicationController
   end
 
   def destroy
+    @webpage = Webpage.find(params[:id])
+    @webpage.destroy
+ 
+    redirect_to webpages_path
   end
 
   def index
