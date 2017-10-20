@@ -5,12 +5,12 @@
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Body</th>
-      <th>Author</th>
-      <th>Created at</th>
-      <th>Updated at</th>
+      <th><%= t('title') %></th>
+      <th><%= t('description') %></th>
+      <th><%= t('body') %></th>
+      <th><%= t('author') %></th>
+      <th><%= t('created_at') %></th>
+      <th><%= t('updated_at') %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,8 +22,8 @@
         <td><%= webpage.description %></td>
         <td><%= webpage.body %></td>
         <td><%= webpage.author %></td>
-        <td><%= webpage.created_at %></td>
-        <td><%= webpage.updated_at %></td>
+        <td><%= l(webpage.created_at) %></td>
+        <td><%= l(webpage.updated_at) %></td>
         <td><%= link_to 'Show', webpage %></td>
         <td><%= link_to 'Edit', edit_webpage_path(webpage) %></td>
         <td><%= link_to 'Destroy', webpage, method: :delete, data: { confirm: 'Tem certeza?' } %></td>

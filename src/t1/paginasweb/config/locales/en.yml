@@ -31,3 +31,9 @@
 
 en:
   hello: "Hello world"
+  title: "Title"
+  description: "Description"
+  body: "Body"
+  author: "Author"
+  created_at: "Created At"
+  updated_at: "Updated At"
