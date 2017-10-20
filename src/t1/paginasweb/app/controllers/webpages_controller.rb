@@ -1,4 +1,6 @@
 class WebpagesController < ApplicationController
+  caches_page :index, :show
+
   def new
     @webpage = Webpage.new
   end
@@ -20,6 +22,10 @@ class WebpagesController < ApplicationController
   def update
     respond_to do |format|
       if @webpage.update(webpage_params)
+        expire_page webpages_path
+        expire_page webpages_path(@webpage)
+        expire_page "/"
+
         format.html { redirect_to @webpage, notice: 'A página foi atualizada com sucesso.' }
         format.json { render :show, status: :ok, location: @webpage }
       else
