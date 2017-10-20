@@ -37,3 +37,7 @@ en:
   author: "Author"
   created_at: "Created At"
   updated_at: "Updated At"
+  new_page: "New Page"
+  show: "Show"
+  edit: "Edit"
+  destroy: "Destroy"

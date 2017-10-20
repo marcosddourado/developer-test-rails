@@ -24,9 +24,9 @@
         <td><%= webpage.author %></td>
         <td><%= l(webpage.created_at) %></td>
         <td><%= l(webpage.updated_at) %></td>
-        <td><%= link_to 'Show', webpage %></td>
-        <td><%= link_to 'Edit', edit_webpage_path(webpage) %></td>
-        <td><%= link_to 'Destroy', webpage, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
+        <td><%= link_to t('show'), webpage %></td>
+        <td><%= link_to t('edit'), edit_webpage_path(webpage) %></td>
+        <td><%= link_to t('destroy'), webpage, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
       </tr>
     <% end %>
   </tbody>

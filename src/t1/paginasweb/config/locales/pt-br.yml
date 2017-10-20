@@ -5,3 +5,7 @@
   author: "Autor"
   created_at: "Criado em"
   updated_at: "Atualizado em"
+  new_page: "Nova Página"
+  show: "Ver"
+  edit: "Editar"
+  destroy: "Deletar"
